@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProfAvery/cpsc349-project1.git"
+    "url": "git+https://github.com/Chingsan53/cpsc349-project1-group24-1.git"
   },
   "author": "Kenytt Avery",
   "license": "UNLICENSED",
   "private": true,
   "bugs": {
-    "url": "https://github.com/ProfAvery/cpsc349-project1/issues"
+    "url": "https://github.com/Chingsan53/cpsc349-project1-group24-1.git"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
