@@ -15,8 +15,39 @@ permalink: '/photoInfo/{{photo.id}}/'
 
     {% endfor %}
 
-    <a href="/">HOME</a>
+    <h2><a href="/">HOME</a></h2>
+ 
+    <table style="margin-left:auto;margin-right:auto">
+        <tr>
+            <th><a href="{{ pagination.href.first }}">First</a></th>
+    
+            {% if pagination.href.previous %}
+        
+            <th><a href="{{ pagination.href.previous }}">Previous</a><th>
+        
+            {% else %}
+        
+            <th>previous</th>
+        
+            {% endif %}
+       
+            <th>Page {{ pagination.pageNumber | plus: 1 }}</th>
+    
+            {% if pagination.href.next %}
+        
+            <th><a href="{{ pagination.href.next }}">Next</a></th>
+        
+            {% else %}
+        
+             <th>Next </th>
+        
+            {% endif %}
+    
+            <th><a href="{{ pagination.href.last }}" style="text-align:right">Last</a></th>
+        </tr>
 
+    </table>
+    
 </header>
 
 <hr style="height:30px">
@@ -44,7 +75,7 @@ permalink: '/photoInfo/{{photo.id}}/'
   
     {% for item in pagination.items %}
   
-        <h2> Photographer Name: {{item.photographer}}</h2>
+        <h3> Photographer Name: {{item.photographer}}</h3>
         <h4> Photographer ID: {{item.id}}</h4>
         <h4> Photo ID: {{item.photographer_id}}</h4>
         <h4> Photographer URL: {{item.photographer_url}}</h4>
