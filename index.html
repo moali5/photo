@@ -5,12 +5,8 @@ title: ART
 <header>
     <h1>{{ title }} </h1>
     <a href="../index.html">Home</a>
-    <a href="../about/index.html">About Us</a>
-    <style>
-        p {
-            text-align: center;
-        }
-    </style>
+    <a href="../about/index.html" style="text-align: center">About Us</a>
+
 </header>
 
 <hr style="height:30px">
@@ -20,9 +16,9 @@ title: ART
 
     <ul>
         <div>
-        {% for photo in photos.otnofqv.media %}
+        {% for photo in photos.kpeic8f.media %}
 
-        <a href="{{photo.link}}"><img src ="{{photo.src.small}}"
+        <a href="photoInfo/{{photo.id}}/index.html"><img src ="{{photo.src.small}}"
              alt="art"
              style="height:150px; width:150px; border:10px solid {{photo.avg_color}}"
              title="{{photo.alt}}"
