@@ -1,7 +1,7 @@
 ---
 layout: base 
 pagination:
-    data: photos.hqkbl1d.media
+    data: photos.alttuky.media
     size: 1
     alias: photo
 permalink: '/photoInfo/{{photo.id}}/'
@@ -54,7 +54,7 @@ permalink: '/photoInfo/{{photo.id}}/'
 
 <main>
 
-    <ul>
+    
         {% for item in pagination.items %}
         
         <img src ="{{item.src.large2x}}" 
@@ -65,7 +65,7 @@ permalink: '/photoInfo/{{photo.id}}/'
         >
 
         {% endfor %}
-    </ul>
+
 
 </main>
 
@@ -83,8 +83,10 @@ permalink: '/photoInfo/{{photo.id}}/'
     {% endfor %}
 
     <a href="/">Home</a>
-    <p>
-            <h4><a href="https://www.pexels.com">Photos provided by Pexels</a></h4>      
-    </p>
+    
+    
+            <h4><a href="https://www.pexels.com">Photos provided by Pexels</a></h4>  
+          
+
 
 </footer>
