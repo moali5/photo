@@ -19,11 +19,11 @@ permalink: '/photoInfo/{{photo.id}}/'
  
     <table style="margin-left:auto;margin-right:auto">
         <tr>
-            <th><a href="{{pagination.href.first}}">First</a></th>
+            <th><a href="/cpsc349-project1-group24-1{{pagination.href.first}}">First</a></th>
     
             {% if pagination.href.previous %}
         
-            <th><a href="{{pagination.href.previous}}">Previous</a><th>
+            <th><a href="/cpsc349-project1-group24-1{{pagination.href.previous}}">Previous</a><th>
         
             {% else %}
         
@@ -35,7 +35,7 @@ permalink: '/photoInfo/{{photo.id}}/'
     
             {% if pagination.href.next %}
         
-            <th><a href="{{pagination.href.next}}">Next</a></th>
+            <th><a href="/cpsc349-project1-group24-1{{pagination.href.next}}">Next</a></th>
         
             {% else %}
         
@@ -43,7 +43,7 @@ permalink: '/photoInfo/{{photo.id}}/'
         
             {% endif %}
     
-            <th><a href="{{pagination.href.last}}" style="text-align:right">Last</a></th>
+            <th><a href="/cpsc349-project1-group24-1{{pagination.href.last}}" style="text-align:right">Last</a></th>
         </tr>
 
     </table>
