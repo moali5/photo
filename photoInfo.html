@@ -15,15 +15,15 @@ permalink: '/photoInfo/{{photo.id}}/'
 
     {% endfor %}
 
-    <h2><a href="{{ '/' | url }}">HOME</a></h2>
+    <h2><a href="{{  '/cpsc349-project1-group24-1/index.html' | url }}">HOME</a></h2>
  
     <table style="margin-left:auto;margin-right:auto">
         <tr>
-            <th><a href="{{ '{{ pagination.href.first }}' | url }}">First</a></th>
+            <th><a href="{{ '/cpsc349-project1-group24-1/{{ pagination.href.first }}' | url }}">First</a></th>
     
             {% if pagination.href.previous %}
         
-            <th><a href="{{ '{{ pagination.href.previous }}' | url }}">Previous</a><th>
+            <th><a href="{{ '/cpsc349-project1-group24-1/{{ pagination.href.previous }}' | url }}">Previous</a><th>
         
             {% else %}
         
@@ -35,7 +35,7 @@ permalink: '/photoInfo/{{photo.id}}/'
     
             {% if pagination.href.next %}
         
-            <th><a href="{{ '{{ pagination.href.next }}' | url }}">Next</a></th>
+            <th><a href="{{ '/cpsc349-project1-group24-1/{{ pagination.href.next }}' | url }}">Next</a></th>
         
             {% else %}
         
@@ -43,7 +43,7 @@ permalink: '/photoInfo/{{photo.id}}/'
         
             {% endif %}
     
-            <th><a href="{{ '{{ pagination.href.last }}' | url }}" style="text-align:right">Last</a></th>
+            <th><a href="{{ '/cpsc349-project1-group24-1/{{ pagination.href.last }}' | url }}" style="text-align:right">Last</a></th>
         </tr>
 
     </table>
@@ -82,7 +82,7 @@ permalink: '/photoInfo/{{photo.id}}/'
 
     {% endfor %}
 
-    <a href="{{ '/' | url }}">Home</a>
+    <a href="{{ '/cpsc349-project1-group24-1/index.html' | url }}">Home</a>
     
     
             <h4><a href="{{ 'https://www.pexels.com' | url }}">Photos provided by Pexels</a></h4>  
