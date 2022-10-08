@@ -1,7 +1,7 @@
 ---
 layout: base 
 pagination:
-    data: photos.xs9vlnz.media
+    data: photos.hqkbl1d.media
     size: 1
     alias: photo
 permalink: '/photoInfo/{{photo.id}}/'
@@ -15,15 +15,17 @@ permalink: '/photoInfo/{{photo.id}}/'
 
     {% endfor %}
 
-    <h2><a href="{{ '/photo/index.html' | url }}">HOME</a></h2>
+    <h2><a href="{{ '/photo/index.html' | url }}">MASTER HOME PAGE</a></h2>
+
+    <h3><a href="{{ '/photo/Motivational/index.html' | url }}">HOME</a></h3>
  
     <table style="margin-left:auto;margin-right:auto">
         <tr>
-            <th><a href="/photo{{pagination.href.first}}">First</a></th>
+            <th><a href="/photo/Motivational{{pagination.href.first}}">First</a></th>
     
             {% if pagination.href.previous %}
         
-            <th><a href="/photo{{pagination.href.previous}}">Previous</a><th>
+            <th><a href="/photo/Motivational{{pagination.href.previous}}">Previous</a><th>
         
             {% else %}
         
@@ -35,7 +37,7 @@ permalink: '/photoInfo/{{photo.id}}/'
     
             {% if pagination.href.next %}
         
-            <th><a href="/photo{{pagination.href.next}}">Next</a></th>
+            <th><a href="/photo/Motivational{{pagination.href.next}}">Next</a></th>
         
             {% else %}
         
@@ -43,7 +45,7 @@ permalink: '/photoInfo/{{photo.id}}/'
         
             {% endif %}
     
-            <th><a href="/photo{{pagination.href.last}}" style="text-align:right">Last</a></th>
+            <th><a href="/photo/Motivational{{pagination.href.last}}" style="text-align:right">Last</a></th>
         </tr>
 
     </table>
