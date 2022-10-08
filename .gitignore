@@ -1,9 +1,9 @@
 .env
 /_site
-/Deserts
-/Desks
-/Grass
-/Hygge
-/Motivational
-/Winter_Landscapes
+/deserts
+/desks
+/grass
+/hygge
+/motivational
+/winter_Landscapes
 node_modules/
