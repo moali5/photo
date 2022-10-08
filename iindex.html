@@ -1,0 +1,47 @@
+---
+layout: base
+title: MASTER HOME PAGE
+---
+<header style=" text-align:center;  font-family: old english;  font-size: 20px; background-color: lightgray; ">
+    
+    <h1>{{ title }} </h1>
+
+    <a href="{{ '/photo/index.html' | url }}">HOME</a>
+
+    <br>
+
+    <a href="{{ '/photo/about/index.html' | url }}" style="text-align: center">About Us</a>
+
+</header>
+
+<hr style="height:30px">
+
+<main style=" text-align:center;  font-family: old english;  font-size: 20px; background-color: lightgray; ">
+
+
+    <table>
+    <tr>
+        {% for photo in pexels.collections.collections %}
+
+
+           <th><h3>Gallery Name: <a href="{{photo.title|slug}}/index.html">{{photo.title}}</a></h3></th>
+           <th><h5>Gallery ID: {{photo.id}}</h5></th>
+           <th><h5>Gallery Photos Count: {{photo.photos_count}}</h5></th>
+
+        {% endfor %}
+    </tr>
+    </table>
+    
+
+
+</main>
+
+<hr style="height:30px">
+
+<footer style=" text-align:center;  font-family: old english;  font-size: 20px; background-color: lightgray; ">
+    <p>
+        <small>
+            <a href="{{ 'https://www.pexels.com' | url }}">Photos provided by Pexels</a>
+        </small>
+    </p>
+</footer>
