@@ -20,16 +20,16 @@ title: MASTER HOME PAGE
 
 
     <table>
-    <tr>
+
         {% for photo in pexels.collections.collections %}
 
-
-           <th><h3>Gallery Name: <a href="{{photo.title|slug}}/index.html">{{photo.title}}</a></h3></th>
+        <tr>
+           <th><h3>Gallery Name: <a href="{{photo.title}}/index.html">{{photo.title}}</a></h3></th>
            <th><h5>Gallery ID: {{photo.id}}</h5></th>
            <th><h5>Gallery Photos Count: {{photo.photos_count}}</h5></th>
-
+        </tr>
         {% endfor %}
-    </tr>
+    
     </table>
     
 
