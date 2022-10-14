@@ -1,7 +1,7 @@
 ---
 layout: base 
 pagination:
-    data: photos.fzvcwie.media
+    data: photos.cwgidat.media
     size: 1
     alias: photo
 permalink: '/photoInfo/{{photo.id}}/'
@@ -17,15 +17,15 @@ permalink: '/photoInfo/{{photo.id}}/'
 
     <h2><a href="{{ '/photo/index.html' | url }}">MASTER HOME PAGE</a></h2>
 
-    <h3><a href="{{ '/photo/Happy Birthday/index.html' | url }}">HOME</a></h3>
+    <h3><a href="{{ '/photo/Mountains/index.html' | url }}">HOME</a></h3>
  
     <table style="margin-left:auto;margin-right:auto">
         <tr>
-            <th><a href="/photo/Happy Birthday{{pagination.href.first}}">First</a></th>
+            <th><a href="/photo/Mountains{{pagination.href.first}}">First</a></th>
     
             {% if pagination.href.previous %}
         
-            <th><a href="/photo/Happy Birthday{{pagination.href.previous}}">Previous</a><th>
+            <th><a href="/photo/Mountains{{pagination.href.previous}}">Previous</a><th>
         
             {% else %}
         
@@ -37,7 +37,7 @@ permalink: '/photoInfo/{{photo.id}}/'
     
             {% if pagination.href.next %}
         
-            <th><a href="/photo/Happy Birthday{{pagination.href.next}}">Next</a></th>
+            <th><a href="/photo/Mountains{{pagination.href.next}}">Next</a></th>
         
             {% else %}
         
@@ -45,7 +45,7 @@ permalink: '/photoInfo/{{photo.id}}/'
         
             {% endif %}
     
-            <th><a href="/photo/Happy Birthday{{pagination.href.last}}" style="text-align:right">Last</a></th>
+            <th><a href="/photo/Mountains{{pagination.href.last}}" style="text-align:right">Last</a></th>
         </tr>
 
     </table>
@@ -84,7 +84,7 @@ permalink: '/photoInfo/{{photo.id}}/'
 
     {% endfor %}
 
-    <a href="{{ '/photo/Happy Birthday/index.html' | url }}">Home</a>
+    <a href="{{ '/photo/Mountains/index.html' | url }}">Home</a>
     
     
             <h4><a href="{{ 'https://www.pexels.com' | url }}">Photos provided by Pexels</a></h4>  
